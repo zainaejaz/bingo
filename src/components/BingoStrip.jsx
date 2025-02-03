@@ -31,19 +31,19 @@ const BingoStrip = () => {
       {stripData.map((card, index) => (
         <div key={index} className="flex items-center justify-center">
           {/* BINGO Text - Rotated Vertically */}
-          <div className="flex items-center justify-center w-[72px] h-full text-[45px] font-medium text-[black] transform -rotate-90 leading-none -mr-3">
+          <div className="flex items-center justify-center w-[55px] sm:w-[66px] md:w-[68px] lg:w-[72px] h-full text-[30px] sm:text-[35px] md:text-[40px] lg:text-[45px] font-medium text-[black] transform -rotate-90 leading-none -mr-3">
             BINGO
           </div>
 
           {/* Bingo Table */}
-          <table className="bg-[#fae8e0] border-3 border-[black] shadow-md mb-4 w-full max-w-lg">
+          <table className="bg-[#fae8e0] border-4 border-[black] shadow-md mb-4 w-full max-w-lg">
             <tbody>
               {[0, 1, 2].map((row) => (
                 <tr key={row}>
                   {card.slice(row * 9, row * 9 + 9).map((num, i) => (
                     <td
                       key={i}
-                      className={`w-12 h-12 border-3 border-[black] text-lg font-bold text-center`}
+                      className={`w-12 h-12 border-4 border-[black] text-[10px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-bold text-center`}
                     >
                       {num !== 0 ? num : ""}
                     </td>
