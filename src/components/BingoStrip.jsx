@@ -32,7 +32,7 @@ const BingoStrip = () => {
       {stripData.map((card, index) => (
         <div key={index} className="flex items-center justify-center">
           {/* BINGO Text - Rotated Vertically */}
-          <div className="mb-[15px] flex items-center text-[30px] sm:text-[40px] md:text-[42px] lg:text-[45px] font-medium text-[black] leading-none transform -rotate-90 -mr-7 sm:-mr-9">
+          <div className="mb-[16px] flex items-center text-[30px] sm:text-[40px] md:text-[42px] lg:text-[45px] font-medium text-[black] leading-none transform -rotate-90 -mr-7 sm:-mr-9">
             BINGO
           </div>
           {/* Bingo Table */}
